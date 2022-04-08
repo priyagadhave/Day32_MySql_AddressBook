@@ -1,0 +1,25 @@
+
+
+------------------------------UC 11 - ADD PERSON TO BOTH FRIEND & FAMILY ------------------------
+
+mysql> insert  into AddressBook  values
+    -> ('7','Smitha','Yadav','Airoli','Vashi','Maharashtra','432160','8577965787','Smitha@gmail.com','Java','Theory');
+Query OK, 1 row affected (0.16 sec)
+
+mysql> insert  into AddressBook  values
+    -> ('8','Priya','Gadhave','Vanashree','Kalyan','Maharashtra','432160','8577555787','Priya@gmail.com','OOPS','Theory');
+Query OK, 1 row affected (0.11 sec)
+
+mysql> select * from AddressBook;
++----+-----------+----------+------------+-------------+--------------+--------+--------------+------------------+----------+-------------+
+| id | firstname | lastname | address    | city        | state        | zip    | phone_number | email            | bookname | booktype    |
++----+-----------+----------+------------+-------------+--------------+--------+--------------+------------------+----------+-------------+
+|  1 | Yadn      | Gadhave  | Khadakpada | Mumbai      | Maharashtra  | 411209 | 9005576655   | yadn@gmail.com   | OOPS     | ►rogramming |
+|  3 | Rina      | Patel    | G.P.Nivas  | Thane       | Maharashtra  | 421609 | 7589654790   | Rina@gmail.com   | OOPS     | ►rogramming |
+|  4 | Mamta     | kurhade  | Adharvad   | chhatisgadh | Uttarpradesh | 421609 | 8747965787   | mamta@gmail.com  | OOPS     | ►rogramming |
+|  5 | Vishal    | gadhave  | Khadakpada | Kalyan      | Maharashtra  | 432609 | 8577965787   | Vishal@gmail.com | OOPS     | ►rogramming |
+|  6 | Bharat    | Gaikwad  | J.P.NAGAR  | Nashik      | Maharashtra  | 432160 | 8577965787   | Bharat@gmail.com | Java     | Theory      |
+|  7 | Smitha    | Yadav    | Airoli     | Vashi       | Maharashtra  | 432160 | 8577965787   | Smitha@gmail.com | Java     | Theory      |
+|  8 | Priya     | Gadhave  | Vanashree  | Kalyan      | Maharashtra  | 432160 | 8577555787   | Priya@gmail.com  | OOPS     | Theory      |
++----+-----------+----------+------------+-------------+--------------+--------+--------------+------------------+----------+-------------+
+7 rows in set (0.00 sec)

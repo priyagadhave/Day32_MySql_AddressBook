@@ -1,0 +1,21 @@
+
+------------------------------UC 2 - CREATE ADDRESS BOOK TABLE ------------------------
+
+mysql> create table AddressBook(id INT unsigned NOT NULL AUTO_INCREMENT, FirstName varchar(50),LastName varchar(50),Address varchar(150),City varchar(30),State varchar(50),Zip varchar(6),Phone varchar(12),Email varchar(50),PRIMARY KEY (id) );
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> describe addressbook;
++-----------+--------------+------+-----+---------+----------------+
+| Field     | Type         | Null | Key | Default | Extra          |
++-----------+--------------+------+-----+---------+----------------+
+| id        | int unsigned | NO   | PRI | NULL    | auto_increment |
+| FirstName | varchar(50)  | YES  |     | NULL    |                |
+| LastName  | varchar(50)  | YES  |     | NULL    |                |
+| Address   | varchar(150) | YES  |     | NULL    |                |
+| City      | varchar(30)  | YES  |     | NULL    |                |
+| State     | varchar(50)  | YES  |     | NULL    |                |
+| Zip       | varchar(6)   | YES  |     | NULL    |                |
+| Phone     | varchar(12)  | YES  |     | NULL    |                |
+| Email     | varchar(50)  | YES  |     | NULL    |                |
++-----------+--------------+------+-----+---------+----------------+
+9 rows in set (0.01 sec)

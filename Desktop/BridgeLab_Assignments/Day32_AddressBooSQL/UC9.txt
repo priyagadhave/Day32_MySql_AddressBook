@@ -1,0 +1,16 @@
+------------------------------UC 9 - IDENTIFY AB WITH NAME & TYPE------------------------
+
+mysql> update addressbook set bookname='OOPS', booktype='^Programming';
+Query OK, 4 rows affected (0.05 sec)
+Rows matched: 4  Changed: 4  Warnings: 0
+
+mysql> select * from AddressBook;
++----+-----------+----------+------------+-------------+--------------+--------+--------------+------------------+----------+-------------+
+| id | firstname | lastname | address    | city        | state        | zip    | phone_number | email            | bookname | booktype    |
++----+-----------+----------+------------+-------------+--------------+--------+--------------+------------------+----------+-------------+
+|  1 | Yadn      | Gadhave  | Khadakpada | Mumbai      | Maharashtra  | 411209 | 9005576655   | yadn@gmail.com   | OOPS     | ►rogramming |
+|  3 | Rina      | Patel    | G.P.Nivas  | Thane       | Maharashtra  | 421609 | 7589654790   | Rina@gmail.com   | OOPS     | ►rogramming |
+|  4 | Mamta     | kurhade  | Adharvad   | chhatisgadh | Uttarpradesh | 421609 | 8747965787   | mamta@gmail.com  | OOPS     | ►rogramming |
+|  5 | Vishal    | gadhave  | Khadakpada | Kalyan      | Maharashtra  | 432609 | 8577965787   | Vishal@gmail.com | OOPS     | ►rogramming |
++----+-----------+----------+------------+-------------+--------------+--------+--------------+------------------+----------+-------------+
+4 rows in set (0.04 sec)

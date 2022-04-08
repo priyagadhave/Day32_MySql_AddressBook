@@ -1,0 +1,28 @@
+------------------------------UC 3 - INSERT CONTACTS IN ADDRESS BOOK TABLE ------------------------
+
+mysql> create table AddressBook(id INT unsigned NOT NULL AUTO_INCREMENT, firstname  varchar(50),lastname varchar(50),address varchar(150),city varchar(30),
+    -> state varchar(50),zip varchar(6),phone_number varchar(12),email varchar(50),PRIMARY KEY (id) );
+Query OK, 0 rows affected (2.92 sec)
+
+
+mysql> insert  into AddressBook  values
+    -> ('1','Yadn','Gadhave','Khadakpada','Mumbai','Maharashtra','411209','9005576655','yadn@gmail.com');
+Query OK, 1 row affected (0.17 sec)
+
+mysql> insert  into AddressBook  values
+    -> ('2','Priya','Gadhave','Vasant vally','Mumbai','Maharashtra','411609','8585896587','shiv@gmail.com');
+Query OK, 1 row affected (0.11 sec)
+
+mysql> insert  into AddressBook  values
+    -> ('3','Rina','Patel','Om Nivas','Thane','Maharashtra','421609','8747965787','Rina@gmail.com');
+Query OK, 1 row affected (0.06 sec)
+
+mysql> select * from AddressBook;
++----+-----------+----------+--------------+--------+-------------+--------+--------------+----------------+
+| id | firstname | lastname | address      | city   | state       | zip    | phone_number | email          |
++----+-----------+----------+--------------+--------+-------------+--------+--------------+----------------+
+|  1 | Yadn      | Gadhave  | Khadakpada   | Mumbai | Maharashtra | 411209 | 9005576655   | yadn@gmail.com |
+|  2 | Priya     | Gadhave  | Vasant vally | Mumbai | Maharashtra | 411609 | 8585896587   | shiv@gmail.com |
+|  3 | Rina      | Patel    | Om Nivas     | Thane  | Maharashtra | 421609 | 8747965787   | Rina@gmail.com |
++----+-----------+----------+--------------+--------+-------------+--------+--------------+----------------+
+3 rows in set (0.00 sec)

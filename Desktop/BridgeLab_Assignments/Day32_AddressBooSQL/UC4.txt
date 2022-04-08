@@ -1,0 +1,15 @@
+------------------------------UC 4 - EDIT CONTACTS USING NAME ------------------------
+
+mysql> update addressbook set address='G.P.Nivas',phone_number='7589654790' where firstname='Rina';
+Query OK, 1 row affected (0.06 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from AddressBook;
++----+-----------+----------+--------------+--------+-------------+--------+--------------+----------------+
+| id | firstname | lastname | address      | city   | state       | zip    | phone_number | email          |
++----+-----------+----------+--------------+--------+-------------+--------+--------------+----------------+
+|  1 | Yadn      | Gadhave  | Khadakpada   | Mumbai | Maharashtra | 411209 | 9005576655   | yadn@gmail.com |
+|  2 | Priya     | Gadhave  | Vasant vally | Mumbai | Maharashtra | 411609 | 8585896587   | shiv@gmail.com |
+|  3 | Rina      | Patel    | G.P.Nivas    | Thane  | Maharashtra | 421609 | 7589654790   | Rina@gmail.com |
++----+-----------+----------+--------------+--------+-------------+--------+--------------+----------------+
+3 rows in set (0.05 sec)

@@ -1,0 +1,13 @@
+--------------------------------UC5----------------------------------
+
+mysql> delete from AddressBook where firstname='Priya';
+Query OK, 1 row affected (0.14 sec)
+
+mysql> select * from AddressBook;
++----+-----------+----------+------------+--------+-------------+--------+--------------+----------------+
+| id | firstname | lastname | address    | city   | state       | zip    | phone_number | email          |
++----+-----------+----------+------------+--------+-------------+--------+--------------+----------------+
+|  1 | Yadn      | Gadhave  | Khadakpada | Mumbai | Maharashtra | 411209 | 9005576655   | yadn@gmail.com |
+|  3 | Rina      | Patel    | G.P.Nivas  | Thane  | Maharashtra | 421609 | 7589654790   | Rina@gmail.com |
++----+-----------+----------+------------+--------+-------------+--------+--------------+----------------+
+2 rows in set (0.02 sec)
